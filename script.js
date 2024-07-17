@@ -6,13 +6,13 @@ const botonEnter = document.querySelector("#enter");
 //Función agregar tarea
 
 function agregarTarea(tarea) {
-  const element = `<ul id="list">
-      <li>
+  const element = `
+      <li id="elemento">
         <i class="fa-regular fa-circle" data-="realizado" id="0"></i>
         <p class="text"> ${tarea} </p>
         <i class="fa-solid fa-trash" data-="eliminado" id="0"></i>
       </li>
-    </ul> `;
+  `;
 
   list.insertAdjacentHTML("beforeend", element);
 }
@@ -24,4 +24,15 @@ botonEnter.addEventListener("click", () => {
   }
 
   input.value = "";
+});
+
+document.addEventListener("keyup", function (event) {
+  if (event.key == "Enter") {
+    const tarea = input.value;
+    if (tarea) {
+      agregarTarea(tarea);
+    }
+
+    input.value = "";
+  }
 });

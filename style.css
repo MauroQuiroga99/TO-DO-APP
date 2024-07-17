@@ -1,120 +1,116 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0 ;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-:root{
---color1:#07a0c3;
---color2:#54c4e4;
---color3:#0982b8;
---color4:#774b83;
---color5:#d5adbf;
---color6:#076791;
---color7:#ffff;
+:root {
+  --color1: #07a0c3;
+  --color2: #54c4e4;
+  --color3: #0982b8;
+  --color4: #774b83;
+  --color5: #d5adbf;
+  --color6: #076791;
+  --color7: #ffff;
 }
 
-body{
-    background: linear-gradient( to bottom, var(--color2), var(--color6));
-    height: 100vh;
-    font-family: "Dongle", sans-serif;
+body {
+  background: linear-gradient(to bottom, var(--color2), var(--color6));
+  height: 100vh;
+  font-family: "Dongle", sans-serif;
 }
-.container{
-    max-width: 80%;
-    width: 400px;
-    height: 700px;
-    margin: 0 auto;
+.container {
+  max-width: 80%;
+  width: 400px;
+  height: 700px;
+  margin: 0 auto;
 }
 
 /*PERFIL*/
 
-.perfil{
-    margin-bottom: 50px;
+.perfil {
+  margin-bottom: 50px;
 }
-.perfil h1{
-    color: var(--color7);
-    font-size: 70px;
-}
-
-.perfil span{
-    color: var(--color7);
-    letter-spacing: 1px;
-    font-size: 40px;
+.perfil h1 {
+  color: var(--color7);
+  font-size: 70px;
 }
 
-.perfil div{
-    color: var(--color7);
-    padding: 50px 0 5px 0;  
-    font-size: 30px;
+.perfil span {
+  color: var(--color7);
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.perfil div {
+  color: var(--color7);
+  padding: 50px 0 5px 0;
+  font-size: 30px;
 }
 
 /*AGREGAR TAREA*/
 
-.agregar-tarea{
-    background-color: var(--color7);
-    border-radius: 5px;
-    height: 70px;
-    display: flex;  
-    align-items: center;
-    padding: 10px;
-    gap: 50px  ;
-} 
-.agregar-tarea input{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    border:none;
-    background-color: var(--color7);
+.agregar-tarea {
+  background-color: var(--color7);
+  border-radius: 5px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 50px;
 }
-.agregar-tarea i{
-    font-size: 50px;
-    color: var(--color4);
+.agregar-tarea input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color7);
+}
+.agregar-tarea i {
+  font-size: 50px;
+  color: var(--color4);
 }
 
 .agregar-tarea i:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .agregar-tarea ::placeholder {
-    font-size: 1.1rem;
-    color: var(--color1);
+  font-size: 1.1rem;
+  color: var(--color1);
 }
 
 /*SECCION TAREA*/
 
-.secc-tareas h3{
-    color: var(--color7);
-    margin-top: 20px;
-    font-size: 30px;
+.secc-tareas h3 {
+  color: var(--color7);
+  margin-top: 20px;
+  font-size: 30px;
 }
-.secc-tareas li{
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, var(--color3),var(--color6));
-    border-radius: 5px;
-    align-items: center;
-    padding: 10px;
-    margin: 5px 0;
-}
-
-.secc-tareas ul{
-
-}
-.secc-tareas i{
-    font-size: 25px;
-    cursor: pointer;
-    color: var(--color7);
+.secc-tareas li {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, var(--color3), var(--color6));
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
 }
 
-.secc-tareas i:hover{
-    color: var(--color2);
-}
-.secc-tareas ul p{
-    color: var(--color7);
-    font-size: 30px;
+.secc-tareas i {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--color7);
 }
 
-.line-througt{
-    text-decoration: line-through;
+.secc-tareas i:hover {
+  color: var(--color2);
+}
+.secc-tareas ul p {
+  color: var(--color7);
+  font-size: 30px;
 }
 
+.line-througt {
+  text-decoration: line-through;
+}

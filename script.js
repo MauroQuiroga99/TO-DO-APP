@@ -33,6 +33,10 @@ function tareaRealizada(element) {
   element.parentNode.querySelector(".text").classList.toggle(lineThrough);
 }
 
+function tareaEliminada(element) {
+  element.parentNode.parentNode.removeChild(element.parentNode);
+}
+
 botonEnter.addEventListener("click", () => {
   const tarea = input.value;
   if (tarea) {

@@ -7,6 +7,15 @@ const uncheck = "fa-circle";
 const lineThrough = "line-through";
 let id = 0;
 const tareaList = [];
+
+//fUNCIÓN PARA FECHA ACTUALIZADA
+const date = new Date();
+fecha.innerHTML = date.toLocaleDateString("es-MX", {
+  weekday: "long",
+  month: "short",
+  day: "numeric",
+});
+
 //Función agregar tarea
 
 function agregarTarea(tarea, id, realizado, eliminado) {
@@ -32,10 +41,12 @@ function tareaRealizada(element) {
   element.classList.toggle(check);
   element.classList.toggle(uncheck);
   element.parentNode.querySelector(".text").classList.toggle(lineThrough);
+  tareaList[element.id].realizado ? false : true;
 }
 
 function tareaEliminada(element) {
   element.parentNode.parentNode.removeChild(element.parentNode);
+  tareaList[element.id].eliminado = true;
 }
 
 botonEnter.addEventListener("click", () => {

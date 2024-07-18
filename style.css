@@ -109,8 +109,10 @@ body {
 .secc-tareas ul p {
   color: var(--color7);
   font-size: 30px;
+  align-self: center;
 }
 
-.line-througt {
+.line-through {
   text-decoration: line-through;
+  
 }

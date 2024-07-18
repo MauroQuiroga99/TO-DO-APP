@@ -6,6 +6,7 @@ const check = "fa-check-circle";
 const uncheck = "fa-circle";
 const lineThrough = "line-through";
 let id = 0;
+const tareaList = [];
 //Función agregar tarea
 
 function agregarTarea(tarea, id, realizado, eliminado) {
@@ -41,10 +42,17 @@ botonEnter.addEventListener("click", () => {
   const tarea = input.value;
   if (tarea) {
     agregarTarea(tarea, id, false, false);
+    tareaList.push({
+      nombre: tarea,
+      id: id,
+      realizado: false,
+      eliminado: false,
+    });
   }
 
   input.value = "";
   id++;
+  console.log(tareaList);
 });
 
 document.addEventListener("keyup", function (event) {
@@ -52,10 +60,17 @@ document.addEventListener("keyup", function (event) {
     const tarea = input.value;
     if (tarea) {
       agregarTarea(tarea, id, false, false);
+      tareaList.push({
+        nombre: tarea,
+        id: id,
+        realizado: false,
+        eliminado: false,
+      });
     }
 
     input.value = "";
     id++;
+    console.log(tareaList);
   }
 });
 
